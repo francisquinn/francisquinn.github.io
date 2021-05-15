@@ -1,13 +1,98 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Navbar.js CSS*/
+
+#navbar {
+  background-color: blue;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#initials {
+  float: left;
+}
+
+#initials a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+#hamburger-icon {
+  float: right;
+  color: white;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  cursor: pointer;
+}
+
+label span {
+  background: #fff;
+  border-radius: 10px;
+  height: 4px;
+  margin: 4px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1) {
+  width: 50%;
+}
+
+span:nth-of-type(2) {
+  width: 86%;
+}
+
+span:nth-of-type(3) {
+  width: 75%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(8px, 0px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(18px, -6px) rotatez(45deg);
+}
+
+/* Menu.js CSS */
+.menu {
+  position: absolute;
+  background-color: pink;
+  height: 90%;
+  width: 100%;
 }
