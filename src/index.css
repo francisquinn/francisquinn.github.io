@@ -7,40 +7,52 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+/* Page margin & padding */
+
+@media (max-width: 2000px) {
+  .contain {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contain {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contain {
+    max-width: 95%;
+  }
+}
+@media (max-width: 992px) {
+  .contain {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contain {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contain {
+    max-width: 100%;
+  }
+}
 /* Navbar.js CSS*/
-
-#navbar {
-  background-color: blue;
-  padding: 10px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-#initials {
-  float: left;
-}
-
-#initials a {
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-
-#hamburger-icon {
-  float: right;
-  color: white;
-}
 
 label {
   display: flex;
@@ -90,9 +102,15 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 /* Menu.js CSS */
-.menu {
-  position: absolute;
+
+#menu {
+  position: fixed;
   background-color: pink;
-  height: 90%;
+  height: 100%;
   width: 100%;
+  opacity: 70%;
+  left: 0;
+  top: 50px;
+  bottom: 0;
+  right: 0;
 }
