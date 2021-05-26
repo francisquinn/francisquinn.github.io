@@ -1,9 +1,13 @@
+import { Container, Row } from "react-bootstrap";
+
 const Projects = () => {
-    return ( 
-        <div className="contain">
-            <h2>Projects page</h2>
-        </div>
-     );
-}
- 
-export default Projects
+  return (
+    <Container className="contain" fluid>
+      <Row>
+        <span>Projects</span>
+      </Row>
+    </Container>
+  );
+};
+
+export default Projects;

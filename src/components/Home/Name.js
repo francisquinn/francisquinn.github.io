@@ -1,9 +1,15 @@
+import { Container, Row } from "react-bootstrap";
+
 const Name = () => {
-    return ( 
-        <div className="name">
-            <h2>Francis Quinn</h2>
-        </div>
-     );
-}
- 
+  return (
+    <Container className="bg-info grid-contain" fluid>
+      <Row className="grid-row">
+          <span id="first-name">FRANCIS</span>
+          <span id="last-name">QUINN</span>
+      </Row>
+    
+    </Container>
+  );
+};
+
 export default Name;

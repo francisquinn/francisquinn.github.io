@@ -18,40 +18,81 @@ code {
 
 /* Page margin & padding */
 
-@media (max-width: 2000px) {
+/* XXXL Screen */
+@media (max-width: 6000px) {
   .contain {
     max-width: 95%;
   }
+  .icon {
+    color: blue;
+    height: 120px;
+  }
 }
 
+/* XXL Screen */
 @media (max-width: 1400px) {
   .contain {
     max-width: 95%;
   }
+  .icon {
+    color: red;
+    height: 100px;
+  }
 }
 
+/* XL Screen */
 @media (max-width: 1200px) {
   .contain {
     max-width: 95%;
   }
+  .icon {
+    color: green;
+    height: 90px;
+  }
 }
+
+/* L Screen */
 @media (max-width: 992px) {
   .contain {
     max-width: 95%;
   }
+  .icon {
+    color: green;
+    height: 80px;
+  }
 }
 
+/* M Screen */
 @media (max-width: 768px) {
   .contain {
     max-width: 95%;
   }
+  .icon {
+    color: green;
+    height: 80px;
+  }
 }
 
+/* S Screen */
 @media (max-width: 576px) {
   .contain {
     max-width: 100%;
   }
+  .icon {
+    color: white;
+    width: 75px;
+  }
 }
+
+.grid-contain {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.grid-row {
+  background-color: red;
+}
+
 /* Navbar.js CSS*/
 
 label {
@@ -113,4 +154,22 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   top: 50px;
   bottom: 0;
   right: 0;
+}
+
+/* Home.js CSS */
+
+.icon-sm {
+  color: white;
+  height: 30px;
+}
+
+#icon-link {
+  padding: 10px 10px 10px;
+  background-color: blue;
+  text-decoration: none;
+}
+
+#link-text {
+  text-decoration: none;
+  color: #fff;
 }
