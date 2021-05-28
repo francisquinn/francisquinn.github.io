@@ -27,7 +27,7 @@ const Menu = ({ display, showMenu }) => {
       </Row>
       <Row className="p-2">
         <Col>
-          <Link to="/cirriculum" onClick={() => showMenu(!display)}>
+          <Link to="/curriculum" onClick={() => showMenu(!display)}>
             <span>Cirriculum Vitae</span>
           </Link>
         </Col>

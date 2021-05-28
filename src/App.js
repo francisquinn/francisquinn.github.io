@@ -6,8 +6,9 @@ import Home from "./components/Home/Home";
 import About from "./components/About";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "./components/Contact";
-import Cirriculum from "./components/Cirriculum";
+import Curriculum from "./components/Curriculum";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -46,26 +47,26 @@ function App() {
             />
           )}
 
-            <Switch>
-              <Route path="/contact">
-                <Contact />
-              </Route>
-              <Route path="/curriculum">
-                <Cirriculum />
-              </Route>
-              <Route path="/projects">
-                <Projects />
-              </Route>
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route exact path="/">
-                <Home />
-              </Route>
-            </Switch>
-        
+          <Switch>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/curriculum">
+              <Curriculum />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
         </div>
       </div>
+      <Footer />
     </Router>
   );
 }

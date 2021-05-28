@@ -27,6 +27,15 @@ code {
     color: blue;
     height: 120px;
   }
+
+  #first-name {
+    font-size: 95px;
+    font-weight: 100;
+  }
+  #last-name {
+    font-size: 160px;
+  }
+ 
 }
 
 /* XXL Screen */
@@ -38,6 +47,15 @@ code {
     color: red;
     height: 100px;
   }
+
+  #first-name {
+    font-size: 85px;
+    font-weight: 100;
+  }
+  #last-name {
+    font-size: 140px;
+  }
+ 
 }
 
 /* XL Screen */
@@ -48,6 +66,13 @@ code {
   .icon {
     color: green;
     height: 90px;
+  }
+  #first-name {
+    font-size: 65px;
+    font-weight: 100;
+  }
+  #last-name {
+    font-size: 115px;
   }
 }
 
@@ -60,6 +85,14 @@ code {
     color: green;
     height: 80px;
   }
+
+  #first-name {
+    font-size: 65px;
+    font-weight: 100;
+  }
+  #last-name {
+    font-size: 115px;
+  }
 }
 
 /* M Screen */
@@ -69,7 +102,15 @@ code {
   }
   .icon {
     color: green;
-    height: 80px;
+    height: 75px;
+  }
+
+  #first-name {
+    font-size: 55px;
+    font-weight: 100;
+  }
+  #last-name {
+    font-size: 105px;
   }
 }
 
@@ -79,8 +120,16 @@ code {
     max-width: 100%;
   }
   .icon {
-    color: white;
+    color: black;
     width: 75px;
+  }
+
+  #first-name {
+    font-size: 45px;
+    font-weight: 100;
+  }
+  #last-name {
+    font-size: 95px;
   }
 }
 
@@ -90,7 +139,7 @@ code {
 }
 
 .grid-row {
-  background-color: red;
+  background-color: none;
 }
 
 /* Navbar.js CSS*/
@@ -173,3 +222,12 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   text-decoration: none;
   color: #fff;
 }
+
+/* Footer.js CSS */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+

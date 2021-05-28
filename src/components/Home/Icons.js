@@ -15,7 +15,7 @@ const Icons = () => {
     { id: 3, icon: mdiEmailOutline, link: "mailto: francisquinnn@gmail.com" },
   ];
   return (
-    <Container className="bg-info">
+    <Container className="grid-contain">
       <Row className="text-center">
         {social_icons.map((icon, index) => (
           <Col key={index}>

@@ -2,12 +2,13 @@ import { Container, Row } from "react-bootstrap";
 
 const Name = () => {
   return (
-    <Container className="bg-info grid-contain" fluid>
+    <Container className="grid-contain" fluid>
       <Row className="grid-row">
-          <span id="first-name">FRANCIS</span>
-          <span id="last-name">QUINN</span>
+        <span id="first-name">FRANCIS</span>
       </Row>
-    
+      <Row id="last-name">
+        <span><b>QUINN</b></span>
+      </Row>
     </Container>
   );
 };
