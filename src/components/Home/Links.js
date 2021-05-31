@@ -10,7 +10,7 @@ const Links = () => {
   const page_links = [
     { id: 1, icon: mdiInformationVariant, text: "About", link: "/about" },
     { id: 2, icon: mdiHammerWrench, text: "Projects", link: "/projects" },
-    { id: 3, icon: mdiFileDocumentOutline, text: "CV", link: "/cirriculum" },
+    { id: 3, icon: mdiFileDocumentOutline, text: "CV", link: "/curriculum" },
     { id: 4, icon: mdiEmailOutline, text: "Contact", link: "/contact" },
   ];
 

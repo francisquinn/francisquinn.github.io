@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
 import Home from "./components/Home/Home";
-import About from "./components/About";
+import About from "./components/About/About";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "./components/Contact";
 import Curriculum from "./components/Curriculum";
@@ -64,9 +64,11 @@ function App() {
               <Home />
             </Route>
           </Switch>
+          <Footer />
         </div>
+        
       </div>
-      <Footer />
+     
     </Router>
   );
 }
