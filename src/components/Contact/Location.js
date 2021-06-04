@@ -1,5 +1,4 @@
 import Key from "../../key.json";
-import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Location = () => {
