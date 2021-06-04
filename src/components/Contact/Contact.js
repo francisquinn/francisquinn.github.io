@@ -12,15 +12,22 @@ const Contact = () => {
       <br />
       <br />
       <Container fluid className="contain bg-light">
-        <Row className="gy-5">
+        <Row className="gx-5">
           <Col xl={5} lg={6} md={12} sm={12} xs={12}>
+            <div>
             <Form />
+            </div>
+            
           </Col>
+          
           <Col xl={7} lg={6} md={12} sm={12} xs={12}>
+            <div>
             <Icons />
             <br />
             <br />
             <Location />
+            </div>
+            
           </Col>
         </Row>
       </Container>

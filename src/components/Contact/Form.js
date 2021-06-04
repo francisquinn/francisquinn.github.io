@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const Form = () => {
   return (
     <form action="https://formspree.io/f/xpzkdjrv" method="POST">
-      <Container fluid className="grid-contain ">
+      <Container fluid className="grid-contain">
         <Row className="gy-4 mb-3">
           <Col xl={6} lg={6} md={6} sm={12} xs={12}>
             <input
