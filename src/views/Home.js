@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Name from "./Name";
-import Icons from "./Icons"
-import Links from "./Links";
+import Name from "../components/Home/Name";
+import Icons from "../components/Home/Icons"
+import Links from "../components/Home/Links";
 
 const Home = () => {
   return (

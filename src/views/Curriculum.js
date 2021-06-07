@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Title from "./Title";
+import Title from "../components/Title";
 
 const Curriculum = () => {
   return (

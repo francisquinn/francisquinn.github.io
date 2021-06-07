@@ -48,6 +48,10 @@ code {
     display: flex;
     align-items: center;
   }
+
+  .menu-items {
+    width: 20%;
+  }
 }
 
 /* XXL Screen */
@@ -67,6 +71,10 @@ code {
   #last-name {
     font-size: 140px;
   }
+
+  .menu-items {
+    width: 20%;
+  }
 }
 
 /* XL Screen */
@@ -84,6 +92,10 @@ code {
   }
   #last-name {
     font-size: 115px;
+  }
+
+  .menu-items {
+    width: 20%;
   }
 }
 
@@ -104,6 +116,10 @@ code {
   #last-name {
     font-size: 115px;
   }
+
+  .menu-items {
+    width: 20%;
+  }
 }
 
 /* M Screen */
@@ -122,6 +138,10 @@ code {
   }
   #last-name {
     font-size: 105px;
+  }
+
+  .menu-items {
+    width: 40%;
   }
 }
 
@@ -149,6 +169,10 @@ code {
     display: block;
     align-items: center;
   }
+
+  .menu-items {
+    width: 70%;
+  }
 }
 
 /* XS Screen */
@@ -175,6 +199,10 @@ code {
     display: block;
     margin-top: 50px;
     align-items: center;
+  }
+
+  .menu-items {
+    width: 100%;
   }
 }
 
@@ -247,12 +275,14 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   background-color: pink;
   height: 100%;
   width: 100%;
-  opacity: 70%;
+  opacity: 100%;
   left: 0;
   top: 50px;
   bottom: 0;
   right: 0;
 }
+
+
 
 /* Home.js CSS */
 
@@ -269,7 +299,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 #link-text {
   text-decoration: none;
-  color: #fff;
+  color: #F4F1DE;
 }
 
 /* Contact.js Styling */
@@ -285,6 +315,13 @@ textarea {
   outline: 0px !important;
   -webkit-appearance: none;
   box-shadow: none !important;
+}
+
+/* Projects.js Styling */
+
+.project-card {
+  background-color: white;
+  padding: 15px;
 }
 
 /* Footer.js CSS */

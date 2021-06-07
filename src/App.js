@@ -1,13 +1,13 @@
 import "./App.css";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-import Menu from "./components/Menu";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
+import Menu from "./views/Menu";
+import Home from "./views/Home";
+import About from "./views/About";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Contact from "./components/Contact/Contact";
-import Curriculum from "./components/Curriculum";
-import Projects from "./components/Projects";
+import Contact from "./views/Contact";
+import Curriculum from "./views/Curriculum";
+import Projects from "./views/Projects";
 import Footer from "./components/Footer";
 
 function App() {

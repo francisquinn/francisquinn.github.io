@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Title from "./Title";
+import Title from "../components/Title";
+import ProjectCard from "../components/Projects/ProjectCard"
 
 const Projects = () => {
   return (
@@ -9,7 +10,7 @@ const Projects = () => {
       <Container fluid className="contain">
         <Row>
           <Col>
-            <span>projects</span>
+            <ProjectCard />
           </Col>
         </Row>
       </Container>
