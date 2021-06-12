@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-  background-color: #F4F1DE;
+  background-color: #f4f1de;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -19,7 +19,7 @@ code {
 }
 
 .App {
-  background-color: #F4F1DE;
+  background-color: #f4f1de;
 }
 
 /* Page margin & padding */
@@ -40,6 +40,9 @@ code {
   }
   #last-name {
     font-size: 160px;
+  }
+  #about-text {
+    margin-left: 50px;
   }
 
   .vertical-center {
@@ -71,6 +74,9 @@ code {
   #last-name {
     font-size: 140px;
   }
+  #about-text {
+    margin-left: 50px;
+  }
 
   .menu-items {
     width: 20%;
@@ -92,6 +98,9 @@ code {
   }
   #last-name {
     font-size: 115px;
+  }
+  #about-text {
+    margin-left: 50px;
   }
 
   .menu-items {
@@ -116,6 +125,9 @@ code {
   #last-name {
     font-size: 115px;
   }
+  #about-text {
+    margin-left: 50px;
+  }
 
   .menu-items {
     width: 20%;
@@ -139,6 +151,9 @@ code {
   #last-name {
     font-size: 105px;
   }
+  #about-text {
+    margin-left: 30px;
+  }
 
   .menu-items {
     width: 40%;
@@ -161,6 +176,10 @@ code {
   }
   #last-name {
     font-size: 95px;
+  }
+
+  #about-text {
+    margin-left: 0px;
   }
 
   .vertical-center {
@@ -193,6 +212,10 @@ code {
     font-size: 85px;
   }
 
+  #about-text {
+    margin-left: 0;
+  }
+
   .vertical-center {
     min-height: 100%; /* Fallback for browsers do NOT support vh unit */
     min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -218,7 +241,7 @@ code {
 /* Navbar.js CSS*/
 
 .navbar {
-  background-color: #F4F1DE;
+  background-color: #f4f1de;
 }
 
 label {
@@ -282,8 +305,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   right: 0;
 }
 
-
-
 /* Home.js CSS */
 
 .icon-sm {
@@ -299,7 +320,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 #link-text {
   text-decoration: none;
-  color: #F4F1DE;
+  color: #f4f1de;
 }
 
 /* Contact.js Styling */
@@ -315,6 +336,18 @@ textarea {
   outline: 0px !important;
   -webkit-appearance: none;
   box-shadow: none !important;
+}
+
+/* About.js Styling */
+
+#about-image {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 5px grey;
+}
+
+#about-text {
+  text-align: justify;
 }
 
 /* Projects.js Styling */

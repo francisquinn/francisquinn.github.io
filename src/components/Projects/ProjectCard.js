@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 const ProjectCard = () => {
   const projects = [
@@ -11,6 +11,12 @@ const ProjectCard = () => {
     {
       id: 2,
       title: "Ephcue",
+      image: "/images/tactalk.PNG",
+      links: [{ code: "www.example.com" }, { view: "www.example.com" }],
+    },
+     {
+      id: 3,
+      title: "Unimeals",
       image: "/images/tactalk.PNG",
       links: [{ code: "www.example.com" }, { view: "www.example.com" }],
     },

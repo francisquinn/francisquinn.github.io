@@ -5,7 +5,7 @@ const Title = ({ title }) => {
     <Container fluid className="contain bg-info">
       <Row>
         <Col className="my-auto">
-          <h2>{title}</h2>
+          <span>{title}</span>
         </Col>
       </Row>
     </Container>
