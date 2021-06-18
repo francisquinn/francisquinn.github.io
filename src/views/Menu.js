@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
-import { mdiHome } from '@mdi/js'; 
+import { mdiHome } from "@mdi/js";
 import { mdiInformationVariant } from "@mdi/js";
 import { mdiFileDocumentOutline } from "@mdi/js";
 import { mdiHammerWrench } from "@mdi/js";
 import { mdiEmailOutline } from "@mdi/js";
 import { Container, Row, Col } from "react-bootstrap";
 import Icon from "@mdi/react";
+import gsap from "gsap";
+import { useEffect } from "react";
 
 const Menu = ({ display, showMenu }) => {
   const links = [
@@ -20,12 +22,17 @@ const Menu = ({ display, showMenu }) => {
     },
     { id: 5, icon: mdiEmailOutline, text: "Contact", link: "/contact" },
   ];
+
+  useEffect(() => {
+    gsap.fromTo("#menu", { y: -1000 }, { y: 0, duration: 0.6 });
+  }, []);
+
   return (
     <Container fluid id="menu">
-      <div className="vertical-center">
+      <div className="vertical-center vertical-center-menu">
         <Container fluid className="bg-warning">
           {links.map((link, index) => (
-            <Row className="p-2 bg-dark" key={index} >
+            <Row className="p-2 bg-dark" key={index}>
               <Col className="bg-success align-self-center">
                 <Link
                   id="link-text"
@@ -37,7 +44,14 @@ const Menu = ({ display, showMenu }) => {
                     <Col className="my-auto" xl={2} lg={3} md={3} sm={3} xs={2}>
                       <Icon className="icon-sm" path={link.icon} />
                     </Col>
-                    <Col className="my-auto" xl={10} lg={9} md={8} sm={9} xs={10}>
+                    <Col
+                      className="my-auto"
+                      xl={10}
+                      lg={9}
+                      md={8}
+                      sm={9}
+                      xs={10}
+                    >
                       <span>{link.text}</span>
                     </Col>
                   </Row>

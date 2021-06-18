@@ -7,11 +7,11 @@ const About = () => {
       <Title title="About Me" />
       <br />
       <Container fluid className="contain mb-5">
-        <Row className="gy-5">
-          <Col xl={4} lg={4} md={5} sm={5} xs={12}>
+        <Row>
+          <Col className="contain mb-5" xl={4} lg={4} md={5} sm={5} xs={12}>
             <img src="/images/about_me.jpg" id="about-image" alt="" />
           </Col>
-          <Col xl={8} lg={8} md={7} sm={7} xs={12}>
+          <Col className="my-auto" xl={8} lg={8} md={7} sm={7} xs={12}>
             <div id="about-text">
               <p>
                 My name is Francis Quinn. I'm a 22 year old computing graduate

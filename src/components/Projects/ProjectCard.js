@@ -1,6 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap";
+import gsap from "gsap";
+import { useEffect } from "react";
 
 const ProjectCard = () => {
+
+  useEffect(() => {
+    gsap.set(".project-card", {autoAlpha:1});
+    gsap.from(".project-card", {opacity: 0, y: 100, duration: 0.7});
+  }, []);
+
+  
   const projects = [
     {
       id: 1,
