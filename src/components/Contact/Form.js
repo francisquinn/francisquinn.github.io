@@ -1,15 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { mdiSendCircleOutline } from "@mdi/js";
+import { mdiSend } from '@mdi/js'; 
 import Icon from "@mdi/react";
-import gsap from "gsap";
-import { useEffect } from "react";
 
 const Form = () => {
-  useEffect(() => {
-    gsap.set(".contact-form", { autoAlpha: 1 });
-    gsap.fromTo(".contact-form", { x: -1000 }, { x: 0, duration: 0.7 });
-  }, []);
-
   return (
     <form
       className="contact-form"
@@ -17,7 +10,7 @@ const Form = () => {
       method="POST"
     >
       <Container fluid className="grid-contain">
-        <Row className="gy-4 mb-3">
+        <Row className="gy-3 mb-3">
           <Col xl={6} lg={6} md={6} sm={12} xs={12}>
             <input
               type="text"
@@ -48,7 +41,7 @@ const Form = () => {
             />
           </Col>
         </Row>
-        <Row className="mb-3">
+        <Row className="mb-4">
           <Col xl={12} lg={12} md={12} sm={12} xs={12}>
             <textarea
               type="text"
@@ -59,11 +52,16 @@ const Form = () => {
             />
           </Col>
         </Row>
-        <Row className="mb-3">
+
+        <Row className="mb-5">
           <Col>
-            <button>
-              <input type="submit" value="Send" />
-              <Icon path={mdiSendCircleOutline}></Icon>
+            <button type="submit" title="Send" required className="submit-btn">
+              <Row>
+                <Col className="my-auto" >
+                  <span className="align-middle submit-txt">SEND</span>
+                  <Icon className="ms-2 align-middle submit-icon" path={mdiSend}></Icon>
+                </Col>
+              </Row>
             </button>
           </Col>
         </Row>

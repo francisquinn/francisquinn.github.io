@@ -11,7 +11,7 @@ const Location = () => {
             id="map"
             title="Location"
             width="100%"
-            height="250"
+            height="300"
             loading="lazy"
             frameBorder="0"
             src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKwQ9SuAcXkgRcBUyl6nHAAo&key=${Key.API_KEY}&zoom=15`}

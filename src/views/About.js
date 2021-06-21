@@ -1,7 +1,16 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../components/Title";
+import { gsap } from "gsap";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    gsap.set("#about-image", {autoAlpha:1});
+    gsap.from("#about-image", {opacity: 0, x: -100, duration: 1});
+
+    gsap.set("#about-text", {autoAlpha:1});
+    gsap.from("#about-text", {opacity: 0, x: 100, duration: 1});
+  }, [] );
   return (
     <div className="about">
       <Title title="About Me" />

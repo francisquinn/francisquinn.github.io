@@ -14,8 +14,6 @@ const Name = () => {
 
     typed.current = new Typed(el.current, options);
     return () => {
-      // Make sure to destroy Typed instance during cleanup
-      // to prevent memory leaks
       typed.current.destroy();
     };
   }, []);

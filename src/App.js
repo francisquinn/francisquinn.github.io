@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Menu from "./views/Menu";
 import Home from "./views/Home";
@@ -20,23 +21,29 @@ function App() {
     var top = document.getElementById("top-bar");
     var mid = document.getElementById("mid-bar");
     var low = document.getElementById("low-bar");
-    
+    var f = document.getElementById("f");
+    var q = document.getElementById("q");
+
     if (menu) {
       setMenu(true);
       iconCheck.checked = true;
       body.classList.toggle("noscroll");
-      navBar.style.backgroundColor = "pink";
-      top.style.backgroundColor = "white";
-      mid.style.backgroundColor = "white";
-      low.style.backgroundColor = "white";
+      navBar.style.backgroundColor = "#81B29A";
+      top.style.backgroundColor = "#f4f1de";
+      mid.style.backgroundColor = "#f4f1de";
+      low.style.backgroundColor = "#f4f1de";
+      f.style.color = "#f4f1de";
+      q.style.color = "#f4f1de";
     } else {
       setMenu(false);
       iconCheck.checked = false;
       body.classList.toggle("noscroll");
       navBar.style.backgroundColor = "#F4F1DE";
-      top.style.backgroundColor = "red";
-      mid.style.backgroundColor = "red";
-      low.style.backgroundColor = "red";
+      top.style.backgroundColor = "#81B29A";
+      mid.style.backgroundColor = "#81B29A";
+      low.style.backgroundColor = "#81B29A";
+      f.style.color = "#3d405b";
+      q.style.color = "#e07a5f";
     }
   };
 
@@ -49,6 +56,7 @@ function App() {
             handleMenu(menu);
           }}
         />
+        <ScrollToTop />
 
         <div className="content mt-3 ">
           {menu && (
@@ -77,9 +85,8 @@ function App() {
               <Home />
             </Route>
           </Switch>
-
-          <Footer />
         </div>
+        <Footer />
       </div>
     </Router>
   );

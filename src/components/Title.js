@@ -1,11 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
 
 const Title = ({ title }) => {
+  
   return (
-    <Container fluid className="contain bg-info">
+    <Container fluid className="contain">
       <Row>
         <Col className="my-auto">
-          <span>{title}</span>
+          <span id="title-text">{title}</span>
         </Col>
       </Row>
     </Container>

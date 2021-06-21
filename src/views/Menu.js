@@ -17,7 +17,7 @@ const Menu = ({ display, showMenu }) => {
     {
       id: 4,
       icon: mdiFileDocumentOutline,
-      text: "Curriculum Vitae",
+      text: "CV",
       link: "/curriculum",
     },
     { id: 5, icon: mdiEmailOutline, text: "Contact", link: "/contact" },
@@ -30,29 +30,22 @@ const Menu = ({ display, showMenu }) => {
   return (
     <Container fluid id="menu">
       <div className="vertical-center vertical-center-menu">
-        <Container fluid className="bg-warning">
+        <Container fluid >
           {links.map((link, index) => (
-            <Row className="p-2 bg-dark" key={index}>
-              <Col className="bg-success align-self-center">
+            <Row className="p-2 mb-3" key={index}>
+              <Col className=" align-self-center">
                 <Link
-                  id="link-text"
+                  id="link-tag"
                   to={link.link}
                   className="d-flex justify-content-center"
                   onClick={() => showMenu(!display)}
                 >
-                  <Row className="bg-info menu-items">
-                    <Col className="my-auto" xl={2} lg={3} md={3} sm={3} xs={2}>
-                      <Icon className="icon-sm" path={link.icon} />
+                  <Row className="menu-items">
+                    <Col className="text-center my-auto" xl={4} lg={4} md={4} sm={4} xs={4}>
+                      <Icon className="icon-menu" path={link.icon} />
                     </Col>
-                    <Col
-                      className="my-auto"
-                      xl={10}
-                      lg={9}
-                      md={8}
-                      sm={9}
-                      xs={10}
-                    >
-                      <span>{link.text}</span>
+                    <Col className="my-auto " xl={8} lg={8} md={8} sm={8} xs={8}>
+                      <span id="menu-text">{link.text}</span>
                     </Col>
                   </Row>
                 </Link>

@@ -5,7 +5,10 @@ const Navbar = ({ display, showMenu }) => {
   return (
     <nav className="navbar sticky-top navbar-light" id="nav">
       <Container fluid className="contain">
-        <Link to="/">FQ</Link>
+        <Link to="/" id="initials">
+          <span id="f">F</span>
+          <span id="q">Q</span>
+        </Link>
         <label className="d-flex" htmlFor="check">
           <input
             type="checkbox"
