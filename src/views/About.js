@@ -18,7 +18,7 @@ const About = () => {
       <Container fluid className="contain mb-5">
         <Row>
           <Col className="contain mb-5" xl={4} lg={4} md={5} sm={5} xs={12}>
-            <img src="/images/about_me.jpg" id="about-image" alt="" />
+            <img loading="lazy" src="/images/about_me.jpg" id="about-image" alt="" />
           </Col>
           <Col className="my-auto" xl={8} lg={8} md={7} sm={7} xs={12}>
             <div id="about-text">

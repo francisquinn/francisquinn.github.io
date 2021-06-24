@@ -55,7 +55,7 @@ const Form = () => {
 
         <Row className="mb-5">
           <Col>
-            <button type="submit" title="Send" required className="submit-btn">
+            <button type="submit" required className="red-btn">
               <Row>
                 <Col className="my-auto" >
                   <span className="align-middle submit-txt">SEND</span>

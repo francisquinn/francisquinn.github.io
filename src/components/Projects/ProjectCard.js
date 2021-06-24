@@ -1,33 +1,40 @@
 import { Container, Row, Col } from "react-bootstrap";
 import gsap from "gsap";
 import { useEffect } from "react";
+import { mdiEye } from "@mdi/js";
+import Icon from "@mdi/react";
+import { mdiCodeTags } from "@mdi/js";
 
 const ProjectCard = () => {
-
   useEffect(() => {
-    gsap.set(".project-card", {autoAlpha:1});
-    gsap.from(".project-card", {opacity: 0, y: 100, duration: 0.7});
+    gsap.set(".project-card", { autoAlpha: 1 });
+    gsap.from(".project-card", { opacity: 0, y: 100, duration: 0.7 });
   }, []);
 
-  
   const projects = [
     {
-      id: 1,
+      id: 0,
       title: "TacTalk",
       image: "/images/tactalk.PNG",
-      links: [{ code: "www.example.com" }, { view: "www.example.com" }],
+      links: [
+        { view: "https://mahara.dkit.ie/view/view.php?t=Lkx4G9U2lmaWHh38qgSK" },
+        { code: "https://github.com/francisquinn/TacTalk" },
+      ],
+    },
+    {
+      id: 1,
+      title: "Ephcue",
+      image: "/images/ephcue.png",
+      links: [
+        { view: "https://www.ephcue.com" },
+        { code: "https://github.com/francisquinn/ephcue" },
+      ],
     },
     {
       id: 2,
-      title: "Ephcue",
-      image: "/images/tactalk.PNG",
-      links: [{ code: "www.example.com" }, { view: "www.example.com" }],
-    },
-     {
-      id: 3,
       title: "Unimeals",
-      image: "/images/tactalk.PNG",
-      links: [{ code: "www.example.com" }, { view: "www.example.com" }],
+      image: "/images/unimeals.png",
+      links: [{ view: "https://mahara.dkit.ie/view/view.php?t=8dRDUPWzAbFfXCSh7n13" }, { code: "https://github.com/lyervo/RojakProject" }],
     },
   ];
   return (
@@ -40,13 +47,49 @@ const ProjectCard = () => {
               <br />
               <br />
               <div className="project-card-body">
-                <h5>{project.title}</h5>
+                <br />
                 <Row className="text-center">
                   <Col>
-                    <button>View Project</button>
+                    <a
+                      href={project.links[0].view}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button className="green-btn">
+                        <Row>
+                          <Col className="my-auto">
+                            <Icon
+                              className="align-middle submit-icon"
+                              path={mdiEye}
+                            ></Icon>
+                            <span className="ms-2 align-middle submit-txt">
+                              Project
+                            </span>
+                          </Col>
+                        </Row>
+                      </button>
+                    </a>
                   </Col>
                   <Col>
-                    <button>View Code</button>
+                    <a
+                      href={project.links[1].code}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <button className="navy-btn">
+                        <Row>
+                          <Col className="my-auto">
+                            <Icon
+                              className="align-middle submit-icon"
+                              path={mdiCodeTags}
+                            ></Icon>
+                            <span className="ms-2 align-middle submit-txt">
+                              Code
+                            </span>
+                          </Col>
+                        </Row>
+                      </button>
+                    </a>
                   </Col>
                 </Row>
               </div>
