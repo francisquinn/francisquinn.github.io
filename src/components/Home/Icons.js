@@ -19,7 +19,7 @@ const Icons = () => {
       icon: mdiLinkedin,
       link: "https://www.linkedin.com/in/francis-quinn-501046161/",
     },
-    { id: 3, icon: mdiEmailOutline, link: "mailto: francisquinnn@gmail.com" },
+    { id: 3, icon: mdiEmailOutline, link: "mailto: francisrquinn@outlook.com" },
   ];
   return (
     <Container className="grid-contain">
