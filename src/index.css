@@ -365,7 +365,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   background-color: var(--green);
   height: 100%;
   width: 100%;
-  opacity: 100%;
   left: 0;
   top: 50px;
   bottom: 0;
