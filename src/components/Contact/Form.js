@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { mdiSend } from '@mdi/js'; 
+import { mdiSend } from "@mdi/js";
 import Icon from "@mdi/react";
 
 const Form = () => {
@@ -57,9 +57,12 @@ const Form = () => {
           <Col>
             <button type="submit" required className="red-btn">
               <Row>
-                <Col className="my-auto" >
+                <Col className="my-auto">
                   <span className="align-middle submit-txt">SEND</span>
-                  <Icon className="ms-2 align-middle submit-icon" path={mdiSend}></Icon>
+                  <Icon
+                    className="ms-2 align-middle submit-icon"
+                    path={mdiSend}
+                  ></Icon>
                 </Col>
               </Row>
             </button>

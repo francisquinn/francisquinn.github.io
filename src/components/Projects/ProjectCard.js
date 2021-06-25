@@ -34,7 +34,10 @@ const ProjectCard = () => {
       id: 2,
       title: "Unimeals",
       image: "/images/unimeals.png",
-      links: [{ view: "https://mahara.dkit.ie/view/view.php?t=8dRDUPWzAbFfXCSh7n13" }, { code: "https://github.com/lyervo/RojakProject" }],
+      links: [
+        { view: "https://mahara.dkit.ie/view/view.php?t=8dRDUPWzAbFfXCSh7n13" },
+        { code: "https://github.com/lyervo/RojakProject" },
+      ],
     },
   ];
   return (

@@ -7,11 +7,10 @@ import { gsap } from "gsap";
 import { useEffect } from "react";
 
 const Icons = () => {
-
   useEffect(() => {
-    gsap.set(".icon", {autoAlpha:1});
-    gsap.from(".icon", {opacity: 0, y: 100, duration: 1});
-  }, [] );
+    gsap.set(".icon", { autoAlpha: 1 });
+    gsap.from(".icon", { opacity: 0, y: 100, duration: 1 });
+  }, []);
 
   const social_icons = [
     { id: 1, icon: mdiGithub, link: "https://github.com/francisquinn" },

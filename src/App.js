@@ -5,11 +5,16 @@ import Navbar from "./components/Navbar";
 import Menu from "./views/Menu";
 import Home from "./views/Home";
 import About from "./views/About";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import Contact from "./views/Contact";
-import Curriculum from "./views/Curriculum";
 import Projects from "./views/Projects";
 import Footer from "./components/Footer";
+import Error from "./views/Error";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -72,9 +77,6 @@ function App() {
             <Route path="/contact">
               <Contact />
             </Route>
-            <Route path="/curriculum">
-              <Curriculum />
-            </Route>
             <Route path="/projects">
               <Projects />
             </Route>
@@ -84,6 +86,10 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
+            <Route path="/error">
+              <Error />
+            </Route>
+            <Redirect to="/error"></Redirect>
           </Switch>
         </div>
         <Footer />

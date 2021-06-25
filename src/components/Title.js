@@ -1,7 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 
 const Title = ({ title }) => {
-  
   return (
     <Container fluid className="contain">
       <Row>

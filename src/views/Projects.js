@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../components/Title";
-import ProjectCard from "../components/Projects/ProjectCard"
+import ProjectCard from "../components/Projects/ProjectCard";
 
 const Projects = () => {
   return (

@@ -9,7 +9,7 @@ const Name = () => {
   useEffect(() => {
     const options = {
       strings: ["FRANCIS"],
-      typeSpeed: 100
+      typeSpeed: 100,
     };
 
     typed.current = new Typed(el.current, options);

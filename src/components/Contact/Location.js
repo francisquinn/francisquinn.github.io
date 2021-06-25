@@ -2,7 +2,6 @@ import Key from "../../key.json";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Location = () => {
-
   return (
     <Container fluid className="grid-contain">
       <Row>

@@ -5,12 +5,12 @@ import { useEffect } from "react";
 
 const About = () => {
   useEffect(() => {
-    gsap.set("#about-image", {autoAlpha:1});
-    gsap.from("#about-image", {opacity: 0, x: -100, duration: 1});
+    gsap.set("#about-image", { autoAlpha: 1 });
+    gsap.from("#about-image", { opacity: 0, x: -100, duration: 1 });
 
-    gsap.set("#about-text", {autoAlpha:1});
-    gsap.from("#about-text", {opacity: 0, x: 100, duration: 1});
-  }, [] );
+    gsap.set("#about-text", { autoAlpha: 1 });
+    gsap.from("#about-text", { opacity: 0, x: 100, duration: 1 });
+  }, []);
   return (
     <div className="about">
       <Title title="About Me" />
@@ -18,7 +18,12 @@ const About = () => {
       <Container fluid className="contain mb-5">
         <Row>
           <Col className="contain mb-5" xl={4} lg={4} md={5} sm={5} xs={12}>
-            <img loading="lazy" src="/images/about_me.jpg" id="about-image" alt="" />
+            <img
+              loading="lazy"
+              src="/images/about_me.jpg"
+              id="about-image"
+              alt="about-me"
+            />
           </Col>
           <Col className="my-auto" xl={8} lg={8} md={7} sm={7} xs={12}>
             <div id="about-text">
@@ -27,19 +32,22 @@ const About = () => {
                 from Ireland.
               </p>
               <p>
-                I have recently aquired a BSc (Hons) in Computing from Dundalk
+                I have recently acquired a BSc (Hons) in Computing from Dundalk
                 Institute of Technology.
               </p>
               <p>
-                Throughout my course, I have worked on varoius different
-                projects using a wide range of technologies both individually
-                and as part of a group.
+                Throughout my course, I have worked on various projects using a
+                wide range of technologies both individually and as part of a
+                group.
               </p>
               <p>
                 I gained experience in the mobile cyber security sector as part
                 of an ERASMUS Internship programe in Treviso, Italy.
               </p>
-              <p>I'm looking forward </p>
+              <p>
+                I am looking forward to my future job prospects in the
+                technology industry.
+              </p>
             </div>
           </Col>
         </Row>

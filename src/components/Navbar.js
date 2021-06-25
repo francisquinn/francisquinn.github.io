@@ -15,9 +15,9 @@ const Navbar = ({ display, showMenu }) => {
             id="check"
             onClick={() => showMenu(!display)}
           />
-          <span id="top-bar" ></span>
-          <span id="mid-bar" ></span>
-          <span id="low-bar" ></span>
+          <span id="top-bar"></span>
+          <span id="mid-bar"></span>
+          <span id="low-bar"></span>
         </label>
       </Container>
     </nav>

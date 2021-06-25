@@ -13,7 +13,8 @@ const Footer = () => {
         <Col>
           <div>
             <span style={{ fontWeight: 100, color: "#3d405b" }}>FRANCIS</span>{" "}
-            <b style={{ color: "#e07a5f" }}>QUINN</b> - <span style={{color: "#3d405b"}} id="year"></span>
+            <b style={{ color: "#e07a5f" }}>QUINN</b> -{" "}
+            <span style={{ color: "#3d405b" }} id="year"></span>
           </div>
         </Col>
       </Row>
