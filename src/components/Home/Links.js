@@ -26,7 +26,7 @@ const Links = () => {
       id: 3,
       icon: mdiFileDocumentOutline,
       text: "CV",
-      link: "https://francis-quinn-portfolio.onrender.com/francisquinn_CV.pdf",
+      link: "https://francisrquinn.com/francisquinn_CV.pdf",
       url: true,
     },
     {

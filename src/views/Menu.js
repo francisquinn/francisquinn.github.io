@@ -30,7 +30,7 @@ const Menu = ({ display, showMenu }) => {
       id: 4,
       icon: mdiFileDocumentOutline,
       text: "CV",
-      link: "https://francis-quinn-portfolio.onrender.com/francisquinn_CV.pdf",
+      link: "https://www.francisrquinn.com/francisquinn_CV.pdf",
       url: true,
     },
     {
