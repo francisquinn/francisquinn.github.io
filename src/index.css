@@ -479,6 +479,7 @@ textarea {
   width: 100%;
   height: auto;
   opacity: 0;
+  border-radius: 30px;
   box-shadow: 3px 3px 3px grey;
   image-rendering: -webkit-optimize-contrast;
 }
@@ -497,6 +498,7 @@ textarea {
   padding: 15px;
   position: relative;
   opacity: 0;
+  border-radius: 30px;
   box-shadow: 3px 3px 3px grey;
   image-rendering: -webkit-optimize-contrast;
 }

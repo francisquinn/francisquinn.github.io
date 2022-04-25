@@ -28,7 +28,7 @@ const About = () => {
           <Col className="my-auto" xl={8} lg={8} md={7} sm={7} xs={12}>
             <div id="about-text">
               <p>
-                My name is Francis Quinn. I'm a 22 year old computing graduate
+                My name is Francis Quinn. I'm a 23 year old computing graduate
                 from Ireland.
               </p>
               <p>
@@ -46,7 +46,7 @@ const About = () => {
               </p>
               <p>
                 I am looking forward to my future job prospects in the
-                technology industry.
+                computing industry.
               </p>
             </div>
           </Col>

@@ -58,7 +58,7 @@ const Menu = ({ display, showMenu }) => {
                     id="link-tag"
                     className="d-flex justify-content-center"
                     href={link.link}
-                  >
+                  >   
                     <Row className="menu-items">
                       <Col
                         className="text-center my-auto"
