@@ -2,7 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../components/Title";
 import Icons from "../components/Home/Icons";
 import Form from "../components/Contact/Form";
-import Location from "../components/Contact/Location";
 
 const Contact = () => {
   return (
@@ -19,7 +18,7 @@ const Contact = () => {
             <Icons />
             <br />
             <br />
-            <Location />
+            {/* <Location /> */}
           </Col>
         </Row>
       </Container>

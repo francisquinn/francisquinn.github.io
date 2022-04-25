@@ -532,8 +532,8 @@ textarea {
 /* Title.js Styling */
 
 #title-text {
-  font-size: 40px;
-  font-weight: 100;
+  font-size: 45px;
+  font-weight: 300;
   color: var(--navy);
 }
 
