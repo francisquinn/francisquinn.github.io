@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import gsap from "gsap";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { mdiEye } from "@mdi/js";
 import Icon from "@mdi/react";
 import { mdiCodeTags } from "@mdi/js";
@@ -10,6 +10,8 @@ const ProjectCard = () => {
     gsap.set(".project-card", { autoAlpha: 1 });
     gsap.from(".project-card", { opacity: 0, y: 100, duration: 0.7 });
   }, []);
+
+  const [loading, setLoading] = useState(true);
 
   const projects = [
     {
@@ -46,7 +48,12 @@ const ProjectCard = () => {
         {projects.map((project, index) => (
           <Col xl={3} lg={4} md={6} sm={6} xs={12} className="mb-4" key={index}>
             <div className="project-card">
-              <img src={project.image} className="card-img-top" alt="tactalk" />
+              {loading && 
+               <div className="spinner-border text-danger" role="status">
+                 <span className="sr-only"></span>
+               </div>
+              }
+              <img src={project.image} className="card-img-top" alt="project" onLoad={() => setLoading(false)} />
               <br />
               <br />
               <div className="project-card-body">
