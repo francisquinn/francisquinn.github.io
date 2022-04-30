@@ -56,10 +56,6 @@ body {
     font-weight: 100;
   }
 
-  #about-text {
-    margin-left: 50px;
-  }
-
   .vertical-center {
     min-height: 85%;
     min-height: 85vh;
@@ -92,10 +88,6 @@ body {
   #last-name {
     font-size: 140px;
   }
-  #about-text {
-    margin-left: 50px;
-  }
-
   .menu-items {
     width: 15%;
   }
@@ -120,10 +112,6 @@ body {
   #last-name {
     font-size: 115px;
   }
-  #about-text {
-    margin-left: 50px;
-  }
-
   .menu-items {
     width: 20%;
   }
@@ -150,10 +138,6 @@ body {
   #last-name {
     font-size: 115px;
   }
-  #about-text {
-    margin-left: 50px;
-  }
-
   .menu-items {
     width: 25%;
   }
@@ -180,10 +164,6 @@ body {
   #last-name {
     font-size: 105px;
   }
-  #about-text {
-    margin-left: 30px;
-  }
-
   .menu-items {
     width: 30%;
   }
@@ -210,11 +190,6 @@ body {
   #last-name {
     font-size: 95px;
   }
-
-  #about-text {
-    margin-left: 0px;
-  }
-
   .vertical-center {
     min-height: 100%;
     min-height: 100vh;
@@ -256,11 +231,6 @@ body {
   #last-name {
     font-size: 85px;
   }
-
-  #about-text {
-    margin-left: 0;
-  }
-
   .vertical-center {
     min-height: 100%; 
     min-height: 100vh;
@@ -543,6 +513,12 @@ textarea {
   font-weight: 100;
   font-size: 40px;
   color: var(--red);
+}
+
+.center-spinner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Footer.js CSS */

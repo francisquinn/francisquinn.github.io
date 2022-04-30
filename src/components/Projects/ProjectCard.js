@@ -49,11 +49,11 @@ const ProjectCard = () => {
           <Col xl={3} lg={4} md={6} sm={6} xs={12} className="mb-4" key={index}>
             <div className="project-card">
               {loading && 
-               <div className="spinner-border text-danger" role="status">
+               <div className="spinner-border text-danger center-spinner" role="status">
                  <span className="sr-only"></span>
                </div>
               }
-              <img src={project.image} className="card-img-top" alt="project" onLoad={() => setLoading(false)} />
+              <img src={project.image} className="card-img-top" style={{ height: "auto" }} alt="project" width="336" height="116" onLoad={() => setLoading(false)} />
               <br />
               <br />
               <div className="project-card-body">

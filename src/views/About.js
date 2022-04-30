@@ -17,15 +17,7 @@ const About = () => {
       <br />
       <Container fluid className="contain mb-5">
         <Row>
-          <Col className="contain mb-5" xl={4} lg={4} md={5} sm={5} xs={12}>
-            <img
-              loading="lazy"
-              src="/images/about_me.jpg"
-              id="about-image"
-              alt="about-me"
-            />
-          </Col>
-          <Col className="my-auto" xl={8} lg={8} md={7} sm={7} xs={12}>
+          <Col xl={12} lg={12} md={12} sm={12} xs={12}>
             <div id="about-text">
               <p>
                 My name is Francis Quinn. I'm a 23 year old computing graduate
