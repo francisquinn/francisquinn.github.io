@@ -7,31 +7,48 @@
     <title>Francis Quinn Portfolio</title>
 </head>
 <body>
-    <main>
-        <section>
-            <h1>Francis Quinn Portfolio</h1>
-            <button>Contact me</button>
-            <button>CV</button>
-            <span>linkein link</span>
-            <span>github link</span>
-        </section>
-        <section>
-            <h2>About me</h2>
-            <p>
-                This is a small paragraph about me test!
-            </p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <span>TacTalk</span>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <button>Email</button>
-        </section>
-        <footer>
-            this is the footer
-        </footer>
-    </main>
+    <div class="container">
+        <aside class="col">
+            <div class="row">
+                <div class="col col-1">
+                    <img src="./images/profile.png" />
+                </div>
+                <div class="col col-4">
+                    <h1>Francis Quinn</h1>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col mb-2 col-sm-3 col-md-6">
+                    <button class="btn btn-primary">Get in touch!</button>
+                </div>
+                <div class="col col-sm-3 col-md-6">
+                    <button class="btn">CV</button>
+                </div>
+            </div>
+            <div class="row mb-2" style="justify-content: center; gap: 20px;">
+                <object data="./icons/linkedin.svg" height="50" width="50"></object>
+                <object data="./icons/github.svg" height="50" width="50"></object>
+            </div>
+            <footer>
+                this is the footer
+            </footer>
+        </aside>
+        <main class="col">
+            <section>
+                <h2>About me</h2>
+                <p>
+                    This is a small paragraph about me test!
+                </p>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <span>TacTalk</span>
+            </section>
+            <section>
+                <h2>Contact</h2>
+                <button class="btn">Email</button>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
