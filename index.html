@@ -4,34 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer type="module"></script>
     <title>Francis Quinn Portfolio</title>
 </head>
 <body>
     <div class="container">
         <aside class="col">
-            <div class="row">
-                <div class="col col-1">
-                    <img src="./images/profile.png" />
-                </div>
-                <div class="col col-4">
-                    <h1>Francis Quinn</h1>
-                </div>
+            <div class="presentation-data">
+                <img src="./images/profile.png" width="130" height="130" />
+                <h1>Francis Quinn</h1>
             </div>
-            <div class="row mb-2">
-                <div class="col mb-2 col-sm-3 col-md-6">
-                    <button class="btn btn-primary">Get in touch!</button>
-                </div>
-                <div class="col col-sm-3 col-md-6">
-                    <button class="btn">CV</button>
-                </div>
+            <div class="presentation-buttons">
+                <button class="btn btn-primary">Get in touch!</button>
+                <button class="btn">CV</button>
             </div>
-            <div class="row mb-2" style="justify-content: center; gap: 20px;">
-                <object data="./icons/linkedin.svg" height="50" width="50"></object>
-                <object data="./icons/github.svg" height="50" width="50"></object>
+            <div class="presentation-icons">
+                <object data="./icons/linkedin.svg" height="60" width="60"></object>
+                <object data="./icons/github.svg" height="60" width="60"></object>
             </div>
-            <footer>
-                this is the footer
-            </footer>
         </aside>
         <main class="col">
             <section>
@@ -42,13 +32,32 @@
             </section>
             <section>
                 <h2>Projects</h2>
-                <span>TacTalk</span>
+                <div class="project-container">
+                    <div class="col project-card">
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/tactalk.png" width="130" height="130" />
+                        </div>
+                        <h3>TacTalk</h3>
+                        <!-- <p>Tactical Voice Recognition </p> -->
+                        <div class="project-links">
+                            <a href="https://mahara.dkit.ie/view/view.php?t=Lkx4G9U2lmaWHh38qgSK" target="_blank">
+                                <button class="btn">View</button>
+                            </a>
+                            <a href="https://github.com/francisquinn/TacTalk" target="_blank">
+                                <button class="btn">Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section>
                 <h2>Contact</h2>
-                <button class="btn">Email</button>
+                Email
             </section>
         </main>
+        <footer>
+            this is the footer
+        </footer>
     </div>
 </body>
 </html>
