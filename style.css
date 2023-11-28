@@ -18,13 +18,6 @@ body {
     display: flex;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
 .col {
     --width: 12; /* Default width */
     flex-basis: calc(var(--width) / var(--columns) * 100%);
@@ -34,7 +27,7 @@ aside {
     --width-small: 12;
     --width-medium: 3;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 10px 20px;
 }
 
@@ -56,13 +49,14 @@ aside {
 }
 
 h1 {
+    font-size: 2em;
     margin-top: 8px;
 }
 
 main {
     --width-small: 12;
     --width-medium: 9;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 10px 20px;
 }
 
@@ -73,7 +67,6 @@ main {
     flex-wrap: wrap;
 }
 
-
 .project-card {
     --width: 12;
     --width-small: 6;
@@ -81,7 +74,7 @@ main {
     text-align: center;
     padding: 10px;
     border-radius: 20px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .project-links {
@@ -101,60 +94,12 @@ p {
     margin: 10px 0px;
 }
 
-footer {
-    text-align: center;
-}
-
-/* SMALL */
-@media (min-width: 576px) {
-    body {
-        background: lightcoral;
-    }
-
-    .col {
-        --width: var(--width-small);
-    }
-
-    .presentation-buttons {
-        display: flex;
-        gap: 20px;
-    }
-}
-
-/* MEDIUM */
-@media (min-width: 768px) {
-    body {
-        background: lightblue;
-    }
-
-    .presentation-buttons {
-        display: block;
-    }
-
-    .col {
-        --width: var(--width-medium);
-    }
-}
-
-/* LARGE */
-@media (min-width: 992px) {
-    body {
-        background: lightseagreen;
-    }
-}
-
-/* EXTRA LARGE */
-@media (min-width: 1200px) {
-    body {
-        background: lightpink;
-    }
-}
-
 /* BUTTONS */
 
 .btn {
     background: none;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border: none;
     font-weight: bold;
     color: #000000;
     border-radius: 50px;
@@ -180,4 +125,53 @@ img {
     width: 8em;
     height: 8em;
     border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+}
+
+/* SMALL */
+@media (min-width: 576px) {
+    body {
+        /* background: lightcoral; */
+    }
+
+    .col {
+        --width: var(--width-small);
+    }
+
+    .presentation-buttons {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/* MEDIUM */
+@media (min-width: 768px) {
+    body {
+        /* background: lightblue; */
+    }
+
+    .presentation-buttons {
+        display: block;
+    }
+
+    .col {
+        --width: var(--width-medium);
+    }
+}
+
+/* LARGE */
+@media (min-width: 992px) {
+    body {
+        /* background: lightseagreen; */
+    }
+}
+
+/* EXTRA LARGE */
+@media (min-width: 1200px) {
+    body {
+        /* background: lightpink; */
+    }
 }
