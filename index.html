@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <title>Francis Quinn Portfolio</title>
 </head>
 <body>
@@ -12,15 +15,18 @@
         <aside class="col">
             <div class="presentation-data">
                 <img src="./images/profile.png" width="130" height="130" />
-                <h1>Francis Quinn</h1>
+                <h1>Francis <span class="text-green">Quinn</span></h1>
             </div>
             <div class="presentation-buttons">
-                <button class="btn btn-primary">Get in touch!</button>
+                <a href="mailto:francisrquinn@outlook.com" style="width: 100%;">
+                    <button class="btn btn-primary">Get in touch!</button>
+                </a>
+               
                 <button class="btn">View CV</button>
             </div>
             <div class="presentation-icons">
-                <object data="./icons/linkedin.svg" height="60" width="60"></object>
-                <object data="./icons/github.svg" height="60" width="60"></object>
+                <a href="https://www.linkedin.com/in/francis-quinn-501046161/" class="presentation-icon-wrapper icon-linkedin"></a>
+                <a href="https://github.com/francisquinn" class="presentation-icon-wrapper icon-github"></a>
             </div>
         </aside>
         <main class="col">

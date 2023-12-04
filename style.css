@@ -1,5 +1,10 @@
+:root {
+    --priamry: #2f781f;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -48,10 +53,37 @@ aside {
     gap: 20px;
 }
 
+.presentation-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--priamry);
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-linkedin {
+    background-image: url('./icons/linkedin.svg');
+}
+
+.icon-github {
+    background-image: url('./icons/github.svg');
+}
+
 h1 {
     font-size: 2em;
     margin-top: 8px;
+    font-weight: 400;
 }
+
+.text-green {
+    color: var(--priamry);
+}
+
 
 main {
     --width-small: 12;
@@ -68,7 +100,7 @@ main {
 }
 
 .project-card {
-    --width: 12;
+    --width: 6;
     --width-small: 6;
     --width-medium: 4;
     text-align: center;
@@ -94,6 +126,10 @@ p {
     margin: 10px 0px;
 }
 
+a {
+    color: var(--priamry);
+}
+
 /* BUTTONS */
 
 .btn {
@@ -102,6 +138,7 @@ p {
     border: none;
     font-weight: bold;
     color: #000000;
+    font-size: 1em;
     border-radius: 50px;
     padding: 15px 40px;
     cursor: pointer;
@@ -109,7 +146,7 @@ p {
 }
 
 .btn-primary {
-    background-color: blue;
+    background-color: var(--priamry);
     color: white;
 }
 
