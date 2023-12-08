@@ -7,7 +7,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -18,9 +23,25 @@ body {
     --columns: 12; /* Number of columns */
     max-width: 1200px;
     max-width: 1200px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
     display: flex;
+}
+
+aside {
+    --width-small: 12;
+    --width-medium: 3;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+main {
+    --width-small: 12;
+    --width-medium: 9;
+    padding: 10px 20px;
 }
 
 .col {
@@ -28,15 +49,17 @@ body {
     flex-basis: calc(var(--width) / var(--columns) * 100%);
 }
 
-aside {
-    --width-small: 12;
-    --width-medium: 3;
-    flex-direction: column;
-    /* border: 1px solid red; */
-    padding: 10px 20px;
+/* Presentation */
+
+h1 {
+    font-size: 2em;
+    margin-top: 8px;
+    font-weight: 400;
 }
 
-/* Presentation */
+.text-green {
+    color: var(--priamry);
+}
 
 .presentation-data {
     text-align: center;
@@ -44,6 +67,13 @@ aside {
 
 .presentation-buttons button {
     margin-bottom: 10px;
+}
+
+.presentation-buttons #cv {
+    width: 100%;
+    display: block; 
+    padding: 15px 40px; 
+    text-align: center;
 }
 
 .presentation-icons {
@@ -74,22 +104,26 @@ aside {
     background-image: url('./icons/github.svg');
 }
 
-h1 {
-    font-size: 2em;
-    margin-top: 8px;
-    font-weight: 400;
+/* About */
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
 }
 
-.text-green {
-    color: var(--priamry);
+li {
+    font-weight: lighter;
+    font-size: 20px;
 }
 
+li:first-child, li:first-child .emoji {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 
-main {
-    --width-small: 12;
-    --width-medium: 9;
-    /* border: 1px solid black; */
-    padding: 10px 20px;
+.emoji {
+    font-size: 25px;
+    margin-right: 10px;
 }
 
 /* Projects */
@@ -106,7 +140,6 @@ main {
     text-align: center;
     padding: 10px;
     border-radius: 20px;
-    /* border: 1px solid blue; */
 }
 
 .project-links {
@@ -118,23 +151,10 @@ main {
     width: 100%;
 }
 
-h3 {
-    margin: 10px 0px;
-}
-
-p {
-    margin: 10px 0px;
-}
-
-a {
-    color: var(--priamry);
-}
-
-/* BUTTONS */
+/* Elements */
 
 .btn {
     background: none;
-    /* border: 1px solid black; */
     border: none;
     font-weight: bold;
     color: #000000;
@@ -150,13 +170,9 @@ a {
     color: white;
 }
 
-/* SPACING */
-
-.mb-2 {
-    margin-bottom: 10px;
+a {
+    color: var(--priamry);
 }
-
-/* IMAGES */
 
 img {
     width: 8em;
@@ -168,12 +184,10 @@ footer {
     text-align: center;
 }
 
+/* Media Queries */
+
 /* SMALL */
 @media (min-width: 576px) {
-    body {
-        /* background: lightcoral; */
-    }
-
     .col {
         --width: var(--width-small);
     }
@@ -182,14 +196,16 @@ footer {
         display: flex;
         gap: 20px;
     }
+
+
+    li:first-child, li:first-child .emoji {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
 }
 
 /* MEDIUM */
 @media (min-width: 768px) {
-    body {
-        /* background: lightblue; */
-    }
-
     .presentation-buttons {
         display: block;
     }
@@ -200,15 +216,6 @@ footer {
 }
 
 /* LARGE */
-@media (min-width: 992px) {
-    body {
-        /* background: lightseagreen; */
-    }
-}
-
+@media (min-width: 992px) {}
 /* EXTRA LARGE */
-@media (min-width: 1200px) {
-    body {
-        /* background: lightpink; */
-    }
-}
+@media (min-width: 1200px) {}
