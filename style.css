@@ -20,36 +20,25 @@ body {
 /* RESPONSIVE */
 
 .container {
-    --columns: 12; /* Number of columns */
+    display: grid;
+    grid-template-rows: 1fr;
     max-width: 1200px;
     max-width: 1200px;
     height: 100%;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin: 0 auto;
-    display: flex;
-}
-
-aside {
-    --width-small: 12;
-    --width-medium: 3;
-    flex-direction: column;
-    padding: 10px 20px;
-}
-
-main {
-    --width-small: 12;
-    --width-medium: 9;
-    padding: 10px 20px;
-}
-
-.col {
-    --width: 12; /* Default width */
-    flex-basis: calc(var(--width) / var(--columns) * 100%);
+    padding: 0 20px;
 }
 
 /* Presentation */
+
+img {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 h1 {
     font-size: 2em;
@@ -81,7 +70,6 @@ h1 {
     display: flex;
     justify-content: space-around;
     margin-top: 15px;
-    gap: 20px;
 }
 
 .presentation-icon-wrapper {
@@ -130,22 +118,12 @@ li {
 /* Projects */
 
 .project-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .project-card {
-    --width: 6;
-    --width-small: 6;
-    --width-medium: 4;
     text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.project-links {
-    display: flex;
-    gap: 10px;
 }
 
 .project-links a {
@@ -174,38 +152,28 @@ a {
     color: var(--priamry);
 }
 
-img {
-    width: 8em;
-    height: 8em;
-    border-radius: 50%;
-}
-
-footer {
-    text-align: center;
-}
-
 /* Media Queries */
 
 /* SMALL */
-@media (min-width: 576px) {
-    .col {
-        --width: var(--width-small);
-    }
-
-    .presentation-buttons {
-        display: flex;
-        gap: 20px;
-    }
-}
+@media (min-width: 576px) {}
 
 /* MEDIUM */
 @media (min-width: 768px) {
-    .presentation-buttons {
-        display: block;
+    .container {
+        grid-template-columns: 1fr 3fr;
+        column-gap: 40px;
     }
 
-    .col {
-        --width: var(--width-medium);
+    aside {
+        grid-column: 1 / 2;
+    }
+
+    main {
+        grid-column: 2 / 4;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
