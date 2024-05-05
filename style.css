@@ -1,5 +1,7 @@
 :root {
     --priamry: #2f781f;
+    --primary-light: #e6f8e2;
+    --grey: #8C8C8C;
 }
 
 *, *::before, *::after {
@@ -8,78 +10,82 @@
 }
 
 html {
-    height: 100%;
+    background-color: #FAFAFA;
 }
 
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
 }
 
-/* RESPONSIVE */
-
-.container {
-    display: grid;
-    grid-template-rows: 1fr;
-    max-width: 1200px;
-    max-width: 1200px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px;
+h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 /* Presentation */
 
-img {
-    width: 8em;
-    height: 8em;
+#presentation {
+   display: grid;
+   padding-top: 20px;
+   max-width: 1300px;
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
+
+.presentation-image {
+    order: 1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.presentation-image img {
+    width: 12em;
+    height: 12em;
     border-radius: 50%;
     object-fit: cover;
 }
 
-h1 {
-    font-size: 2em;
-    margin-top: 8px;
+.presentation-content {
+    order: 2;
+    text-align: center;
+}
+
+.presentation-content h1 {
+    font-size: 3em;
     font-weight: 400;
+    margin: 0;
     font-weight: lighter;
 }
 
-.text-green {
+.presentation-content h1 span {
     color: var(--priamry);
 }
 
-.presentation-data {
-    text-align: center;
+.presentation-content p {
+    margin: 15px 0;
 }
 
-.presentation-buttons button {
-    margin-bottom: 10px;
-}
-
-.presentation-buttons #cv {
-    width: 100%;
-    display: block; 
-    padding: 15px 40px; 
-    text-align: center;
+.presentation-content button {
+    margin-bottom: 30px;
 }
 
 .presentation-icons {
     display: flex;
     justify-content: space-around;
-    margin-top: 15px;
+    margin: 0 auto;
+    max-width: 350px;
 }
 
 .presentation-icon-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
-    background-color: #e6f8e2;
+    background-color: var(--primary-light);
     background-size: 35px 35px;
     background-repeat: no-repeat;
     background-position: center;
@@ -90,35 +96,21 @@ h1 {
     text-decoration: none;
 }
 
-.icon-linkedin {
-    background-image: url('./icons/linkedin.svg');
-}
-
-.icon-github {
-    background-image: url('./icons/github.svg');
-}
-
-/* About */
-
-ul {
-    padding-left: 0;
-    list-style-type: none;
-}
-
-li {
-    font-weight: lighter;
-    font-size: 20px;
-}
-
-.emoji {
-    font-size: 25px;
-    margin-right: 10px;
-}
-
 /* Projects */
+
+#projects {
+    background-color: white;
+}
+
+.projects-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 .project-container {
     display: grid;
+    gap: 30px;
     grid-template-columns: 1fr;
 }
 
@@ -126,11 +118,30 @@ li {
     text-align: center;
 }
 
-.project-links a {
-    width: 100%;
+.project-card h3 {
+    font-size: 22px;
+    margin: 15px 0;
 }
 
-/* Elements */
+.project-card p {
+    color: var(--grey);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.project-actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+.project-actions button {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+/* Buttons */
 
 .btn {
     background: none;
@@ -140,7 +151,6 @@ li {
     border-radius: 50px;
     padding: 15px 40px;
     cursor: pointer;
-    width: 100%;
 }
 
 .btn-primary {
@@ -148,28 +158,83 @@ li {
     color: white;
 }
 
-a {
+.btn-primary-light {
+    background-color: var(--primary-light);
+    color: var(--priamry);
+}
+
+/* Icons */
+
+.icon {
+    display: inline-block;
+    vertical-align: top;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.icon-code {
+    margin-right: 5px;
+    background-image: url('./icons/code.svg');
+}
+
+.icon-link {
+    margin-right: 5px;
+    background-image: url('./icons/link.svg');
+}
+
+.icon-linkedin {
+    background-image: url('./icons/linkedin.svg');
+}
+
+.icon-github {
+    background-image: url('./icons/github.svg');
+}
+
+/* Footer */
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer span:first-child {
     color: var(--priamry);
 }
 
 /* Media Queries */
 
 /* SMALL */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 /* MEDIUM */
 @media (min-width: 768px) {
-    .container {
-        grid-template-columns: 1fr 3fr;
+    #presentation {
+        grid-template-columns: 1fr 1fr;
         column-gap: 40px;
     }
 
-    aside {
-        grid-column: 1 / 2;
+    .presentation-content {
+        order: 1;
     }
 
-    main {
-        grid-column: 2 / 4;
+    .presentation-image {
+        order: 2;
+    }
+
+    .presentation-image img {
+        width: 15em;
+        height: 15em;
+    }
+
+    .presentation-content h1 {
+        font-size: 3.5em;
     }
 
     .project-container {
@@ -178,6 +243,21 @@ a {
 }
 
 /* LARGE */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .presentation-image img {
+        width: 20em;
+        height: 20em;
+    }
+
+    .presentation-content h1 {
+        font-size: 5em;
+    }
+
+    .presentation-icon-wrapper {
+        height: 80px;
+        width: 80px;
+        background-size: 40px 40px;
+    }
+}
 /* EXTRA LARGE */
 @media (min-width: 1200px) {}

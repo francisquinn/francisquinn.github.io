@@ -11,61 +11,102 @@
     <title>Francis Quinn Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <aside>
-            <div class="presentation-data">
-                <img src="./images/profile.jpg" width="130" height="130" />
-                <h1>Francis <span class="text-green">Quinn</span></h1>
-            </div>
-            <div class="presentation-buttons">
+    <main>
+        <section id="presentation">
+            <div class="presentation-content">
+                <h1>Francis <span>Quinn</span></h1>
+                <p>Frontend Developer</p>
                 <a href="mailto:francisrquinn@outlook.com" style="width: 100%;">
                     <button class="btn btn-primary">Get in touch!</button>
                 </a>
+                <div class="presentation-icons">
+                    <a href="./CV_FRANCIS_QUINN.pdf" class="presentation-icon-wrapper" id="cv" target="_blank">CV</a>
+                    <a href="https://www.linkedin.com/in/francis-quinn-501046161/" class="presentation-icon-wrapper icon-linkedin" target="_blank"></a>
+                    <a href="https://github.com/francisquinn" class="presentation-icon-wrapper icon-github" target="_blank"></a>
+                </div>
             </div>
-            <div class="presentation-icons">
-                <a href="./CV_FRANCIS_QUINN.pdf" class="presentation-icon-wrapper" id="cv" target="_blank">CV</a>
-                <a href="https://www.linkedin.com/in/francis-quinn-501046161/" class="presentation-icon-wrapper icon-linkedin" target="_blank"></a>
-                <a href="https://github.com/francisquinn" class="presentation-icon-wrapper icon-github" target="_blank"></a>
+            <div class="presentation-image">
+                <img src="./images/profile.jpg" width="130" height="130" />
             </div>
-        </aside>
-        <main>
-            <section>
-                <ul>
-                    <li><span class="emoji">👋</span>F&aacute;ilte</li>
-                    <li><span class="emoji">🇮🇪</span>From the green hills of Ireland</li>
-                    <li><span class="emoji">🍝</span>Currently based in Trieste, Italy</li>
-                    <li><span class="emoji">👨‍💻</span>Frontend Web Developer</li>
-                </ul>
-            </section>
-            <section>
+        </section>
+        <section id="projects">
+            <div class="projects-wrapper">
+                <h2>Projects</h2>
                 <div class="project-container">
                     <div class="project-card">
-                        <a href="https://mahara.dkit.ie/view/view.php?t=Lkx4G9U2lmaWHh38qgSK" target="_blank">
-                            <div class="project-img-wrapper">
-                                <img class="project-img" src="./images/tactalk.png" width="130" height="130" />
-                            </div>
-                            <h3>TacTalk</h3>
-                        </a>
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/tactalk.png" width="130" height="130" />
+                        </div>
+                        <h3>TacTalk</h3>
+                        <p>Tactical voice recognition analysis</p>
+                        <div class="project-actions">
+                            <a href="https://github.com/francisquinn/TacTalk" target="_blank">
+                                <button class="btn btn-primary-light">
+                                    <span class="icon icon-code"></span>
+                                    Code
+                                </button>
+                            </a>
+                            <a href="https://mahara.dkit.ie/view/view.php?t=Lkx4G9U2lmaWHh38qgSK" target="_blank">
+                                <button class="btn btn-primary-light">
+                                    <span class="icon icon-link"></span>
+                                    View
+                                </button>
+                            </a>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <a href="https://www.convinientwines.com/" target="_blank">
-                            <div class="project-img-wrapper">
-                                <img class="project-img" src="./images/cvi.png" width="130" height="130" />
-                            </div>
-                            <h3>Convinient Wines Italia</h3>
-                        </a>
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/cvi.png" width="130" height="130" />
+                        </div>
+                        <h3>Convinient Wines Italia</h3>
+                        <p>Wine broker</p>
+                        <div class="project-actions">
+                            <a href="https://github.com/francisquinn/ConvinientWinesItalia" target="_blank">
+                                <button class="btn btn-primary-light">
+                                    <span class="icon icon-code"></span>
+                                    Code
+                                </button>
+                            </a>
+                            <a href="https://www.convinientwines.com/" target="_blank">
+                                <button class="btn btn-primary-light">
+                                    <span class="icon icon-link"></span>
+                                    View
+                                </button>
+                            </a>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <a href="https://github.com/francisquinn/checkminder" target="_blank">
-                            <div class="project-img-wrapper">
-                                <img class="project-img" src="./images/checkminder.png" width="130" height="130" />
-                            </div>
-                            <h3>Checkminder</h3>
-                        </a>
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/checkminder.png" width="130" height="130" />
+                        </div>
+                        <h3>Checkminder</h3>
+                        <p>Interactive checklist</p>
+                        <div class="project-actions">
+                            <a href="https://github.com/francisquinn/checkminder" target="_blank">
+                                <button class="btn btn-primary-light">
+                                    <span class="icon icon-code"></span>
+                                    Code
+                                </button>
+                            </a>
+                            <a href="https://francisquinn.github.io/checkminder/" target="_blank">
+                                <button class="btn btn-primary-light">
+                                    <span class="icon icon-link"></span>
+                                    View
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Francis <span>Quinn</span> &middot; <span id="currentYear"></span>
+    </footer>
+    <script>
+        addEventListener('DOMContentLoaded', () => {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
 </body>
 </html>
