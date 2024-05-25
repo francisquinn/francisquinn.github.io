@@ -24,7 +24,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-a {
+a, a:visited, a:hover, a:active {
     color: var(--priamry);
 }
 
